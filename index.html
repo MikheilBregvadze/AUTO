@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="carusel/owl.carousel.min.css">
+    <script src="carusel/owl.carousel.min.js"></script>
+  <script>
+  $(document).ready(function () {
+     $('.main-icon').unbind('click');
+     $('.main-icon').click(function () {
+        $('.main-icon').toggleClass('open');
+        $('.main-logo').toggleClass('active');
+        $('.main-logo-active').toggleClass('active');
+        $('.navigation').fadeToggle(200);
+     });            
+  });
+  $(document).ready(function () {
+     $('.dropdown-icon').unbind('click');
+     $('.dropdown-icon').click(function () {
+        $('.dropdown-icon').toggleClass('open');
+        $('.dropdown-icon-row').toggleClass('active');
+        $('.login_form').fadeToggle(100);
+     });            
+  });
+  </script> 
+    
+</head>
+<body>
+    <section id="first-section">
+        <div class="start-page-carusel">
+            <div class="owl-carousel owl-theme">
+                <a class="item">
+                    <div class="slider-img">
+                        <!-- <img src="img/car.png">  -->
+                        <div class="date-text">
+                            <p>27.11.</p>
+                            <p>Vintage Auto Exhibition</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="item">
+                    <div class="slider-img2">
+                        <!-- <img src="img/backBig.jpg">  -->
+                        <div class="date-text">
+                            <p>27.11.</p>
+                            <p>Vintage Auto Exhibition</p>
+                        </div>
+                    </div>                    
+                </a>
+            </div>
+        </div>        
+
+        <div class="parallax">
+            <div class="ball white big" data-rellax-speed="-1"></div>
+            <div class="ball white big" data-rellax-speed="2"></div>
+            <div class="ball white medium" data-rellax-speed="2"></div>
+            <div class="ball white medium" data-rellax-speed="1"></div>
+            <div class="ball white small" data-rellax-speed="-1"></div>
+            <div class="ball red medium" data-rellax-speed="-6"></div>
+            <div class="ball red medium" data-rellax-speed="-2"></div>
+            <div class="ball red small" data-rellax-speed="-2"></div>
+            <div class="ball red small" data-rellax-speed="1"></div>
+            <div class="ball red small" data-rellax-speed="-7"></div>
+        </div>
+        <header>
+            <div class="dropdown-icon"><i class="fa fa-user-circle"></i></span></div>
+            <div class="login_form">
+                <div class="login-icon"><i class="fa fa-user-circle"></i></div>
+                <div class="emailBox">
+                    <form onsubmit="return Validate()" name="vform">
+                        <div>
+                            <input class="emailBox-input" type="email" name="email" placeholder="Email">
+                            <div id="email_error" class="valid-error"></div>
+                        </div>
+                        <div>
+                            <input class="emailBox-input" type="password" name="password" placeholder="Password">
+                            <div id="password_error" class="valid-error"></div>
+                        </div>
+                            <input type="submit" name="submit" class="log_in" value="Log In">
+                    </form>
+                </div>
+            </div>
+            <div class="header-container clearfix">
+                <div class="logo">
+                    <div class="main-logo">
+                        <span class="main-logo-span"></span>
+                        <a href="" class="main-logo-active">AUTO</a>
+                    </div>
+                    <div class="main-icon"></div>
+                    <nav class="navigation">
+                        <ul>
+                            <li><a href="#first-section">Home</a></li>
+                            <li><a href="#second-section">Services</a></li>
+                            <li><a href="#third-section">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section id="second-section" class="clearfix">
+        <div class="gallery-text">
+            THE CORNER GARAGE <br class="br"> FOR COLLECTORS CARS
+        </div>
+        <div class="img-box clearfix">
+            <div class="image">
+                <a href=""><img src="img/image1.png"></a>
+                <p>MODIFY</p>
+            </div>
+            <div class="image">
+                <a href=""><img src="img/image2.png"></a>
+                <p class="different-class">BUY</p>
+            </div>
+            <div class="image">
+                <a href=""><img src="img/image3.png"></a>
+                <p>REPAIR</p>
+            </div>
+        </div>
+        <div class="animation-section">
+            <div class="mountains">
+                <img src="img/mountains.png">
+            </div>
+            <div class="trees">
+                <img src="img/trees.png">
+            </div>
+            <div class="bus">
+                <img src="img/bus.png">
+                <ul class="smoke">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="road">
+                <img src="img/road.png">
+            </div>
+        </div>
+    </section>
+    <section id="third-section">
+        <div class="contact-section clearfix">
+            <div id="map" class="map-side">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1489.0681407366626!2d44.78501889999999!3d41.71757799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404472d4fa5b02d7%3A0xced15c2c7992ceb5!2sGeoLab!5e0!3m2!1ska!2sge!4v1523705549316"
+                width="100%;" height="600" frameborder="0" style="border:0" allowfullscreen>
+                </iframe> -->
+            </div>
+            <div class="form-side clearfix">
+                <div class="left-side">
+                    <div class="left-side-container">
+                        <p>CONTACT INFORMATION</p>
+                        <p>click to view</p>
+                    <div class="input-icon">
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <h2>GET IN TOUCH</h2>
+                    <form onsubmit="return Validated()" name="cform">
+                        <div class="data-input">
+                            <div>
+                                <input class="input-first-child" type="name" name="username" placeholder="name">
+                                    <div id="username_error" class="val-error"></div>
+                            </div>
+                            <div>
+                                <input type="email" name="useremail" placeholder="email">
+                                    <div id="useremail_error" class="val-error"></div>
+                            </div>
+                            <div>
+                                <input type="title" name="title" placeholder="subject">
+                                    <div id="title_error" class="val-error"></div>
+                            </div>
+                            <div>
+                                <textarea name="msg" placeholder="text"></textarea>
+                                    <div id="msg_error" class="val-error"></div>
+                            </div>
+                        </div>
+                        <div class="data-radio">
+                           <label class="label-container">mail
+                                <input type="radio" checked="check" name="radio">
+                                <span class="check"></span>
+                            </label>
+                            <label class="label-container femail">femail
+                                <input type="radio" name="radio">
+                                <span class="check"></span>
+                            </label>
+                            <div class="check-box">
+                                <p>Sign up for newsletter:</p>
+                                <label class="check-box_container">recive images
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="check-box_container">recive promotions
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="check-box_container">recive updates
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="check-box_container">recive job offers
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div class="send-click">
+                                    <input class="contact-btn" type="submit" name="submit1" value="SEND">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container clearfix">
+            <div class="footer-left">
+             &copy copyright 2018
+            </div>
+            <div class="footer-right">
+                created by: Mikheil Bregvadze,<br class="br1"> Giorgi Giunashvili.
+            </div>
+        </div>
+    </footer>
+    
+    <!--
+    <script src="script/jquery-3.2.1.min.js"></script>-->
+    <script src="script/parallex.js"></script>
+
+    
+    <script type="text/javascript">
+    $( document ).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:0,
+            startPosition: 0,
+            nav:true,
+            items:1
+        });
+    });
+       
+
+        var rellax = new Rellax('.ball');
+        
+    </script>
+    <script type="text/javascript">
+      var email = document.forms["vform"]["email"];
+      var password = document.forms["vform"]["password"];
+
+      var email_error = document.getElementById("email_error");
+      var password_error = document.getElementById("password_error");
+
+      email.addEventListener("blur", emailVerify, true);
+      password.addEventListener("blur", passwordVerify, true);
+
+      function Validate(){
+        if (email.value == ""){
+            email.style.border = "1px solid red";
+            email_error.textContent = "please enter your email";
+            email.focus();
+            return false;
+        }
+        if (password.value == ""){
+            password.style.border = "1px solid red";
+            password_error.textContent = "please enter your email";
+            password.focus();
+            return false;
+        }
+      }
+
+      function emailVerify() {
+          if (email.value != "") {
+            email.style.border = "1px solid red";
+            email_error.innerHTML = "";
+            return true;
+          }
+      }
+      function passwordVerify() {
+          if (password.value != "") {
+            password.style.border = "1px solid red";
+            password_error.innerHTML = "";
+            return true;
+          }
+      }
+    </script>
+    <script type="text/javascript">//second contact form validate!
+        var username = document.forms["cform"]["username"];
+        var useremail = document.forms["cform"]["useremail"];
+        var title = document.forms["cform"]["title"];
+        var msg = document.forms["cform"]["msg"];
+
+
+        var username_error = document.getElementById("username_error");
+        var useremail_error = document.getElementById("useremail_error");
+        var title_error = document.getElementById("title_error");
+        var msg_error = document.getElementById("msg_error");
+
+
+        username.addEventListener("blur", usernameVerify, true);
+        useremail.addEventListener("blur", useremailVerify, true);
+        title.addEventListener("blur", titleVerify, true);
+        msg.addEventListener("blur", msgVerify, true);
+        
+
+        function Validated(){
+        if (username.value == ""){
+            username_error.textContent = "please write your name";
+            username.focus();
+            return false;
+        }
+        if (useremail.value == ""){
+            useremail_error.textContent = "please write your email";
+            useremail.focus();
+            return false;
+        }
+        if (title.value == ""){
+            title_error.textContent = "please write your subject";
+            title.focus();
+            return false;
+        }
+        if (msg.value == ""){
+            msg_error.textContent = "please write your text";
+            msg.focus();
+            return false;
+        }
+      }
+
+
+      function usernameVerify() {
+          if (username.value != "") {
+            username.style.border = "1px solid red";
+            username_error.innerHTML = "";
+            return true;
+          }
+      }
+      function useremailVerify() {
+          if (useremail.value != "") {
+            useremail.style.border = "1px solid red";
+            useremail_error.innerHTML = "";
+            return true;
+          }
+      }
+      function titleVerify() {
+          if (title.value != "") {
+            title.style.border = "1px solid red";
+            title_error.innerHTML = "";
+            return true;
+          }
+        }
+        function msgVerify() {
+          if (msg.value != "") {
+            msg.style.border = "1px solid red";
+            msg_error.innerHTML = "";
+            return true;
+          }
+        }
+    </script>
+
+    <!----------------------------- google api------------------------>
+    <script>
+    function initMap() {
+      var options = {
+        zoom:14,
+        center:{lat:41.7151,lng:44.8271}
+      }
+      var map = new google.maps.Map(document.getElementById("map"), options);
+
+      var marker = new google.maps.Marker({
+        position:{lat:41.7176,lng:44.7850},
+        map:map
+      });
+
+      var infoWindow = new google.maps.InfoWindow({
+        content:"<h1>ჯეოლაბი(Geolab)</h1>"
+      });
+      marker.addListener("click", function(){
+        infoWindow.open(map, marker);
+      });
+
+    }
+  </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwI8eMZbV0GgzC9ecQHL_PQy8-7RbLnYo&callback=initMap">
+  </script>
+</body>
+</html>
